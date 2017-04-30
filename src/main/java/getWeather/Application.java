@@ -28,12 +28,13 @@ public class Application {
 		String city = "Glasgow,uk";
 
 		return args-> {
-			for (int i=0;i<10;i++) {
-			getWeatherForLocation(restTemplate, "Glasgow,uk");
-			getWeatherForLocation(restTemplate, "Cardiff,uk");
-			getWeatherForLocation(restTemplate, "Denver,us");
-			getWeatherForLocation(restTemplate, "80016,us");
-			java.lang.Thread.sleep(5000);
+//			for (int i=0;i<10;i++) {
+			while (true)
+			  getWeatherForLocation(restTemplate, "Glasgow,uk");
+			  getWeatherForLocation(restTemplate, "Cardiff,uk");
+			  getWeatherForLocation(restTemplate, "Denver,us");
+			  getWeatherForLocation(restTemplate, "80016,us");
+			  java.lang.Thread.sleep(60000);
 			}
 		};
 	}
