@@ -29,7 +29,7 @@ public class Application {
 
 		return args-> {
 //			for (int i=0;i<10;i++) {
-			while (true)
+			while (true) {
 			  getWeatherForLocation(restTemplate, "Glasgow,uk");
 			  getWeatherForLocation(restTemplate, "Cardiff,uk");
 			  getWeatherForLocation(restTemplate, "Denver,us");
