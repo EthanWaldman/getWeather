@@ -34,7 +34,7 @@ public class Application {
 			  getWeatherForLocation(restTemplate, "Cardiff,uk");
 			  getWeatherForLocation(restTemplate, "Denver,us");
 			  getWeatherForLocation(restTemplate, "80016,us");
-			  java.lang.Thread.sleep(1800000);
+			  java.lang.Thread.sleep(60000);
 			}
 		};
 	}
